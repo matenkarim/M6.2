@@ -41,51 +41,64 @@ h1 {
   color: white;
   text-shadow: 1px 1px 1px black;
   background: url('/img/logo.png') no-repeat center center;
-  background-size: cover;
+  background-position: center;
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
 
 .content {
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center items vertically */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 50px 20mm;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .centered {
   text-align: center; 
   width: 100%; 
+  margin-top: 120px;
+}
+
+.centered h2 {
+  font-size: 60px;
+  margin: 0 0 10px;
 }
 
 .columns {
-  display: flex; /* Use flexbox for columns */
-  justify-content: space-between; /* Space between columns */
-  margin-top: 20px; /* Space above the columns */
-}
-
-.column {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
   column-count: 2;
   column-width: 50%;
+  column-gap: 20px; 
   text-align: left;
   font-size: 12px;
-  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.column p {
-  line-height: 1.5; /* Line height for better readability */
-  overflow-wrap: break-word; /* Ensure long words break to the next line */
+.columns p {
+  font-size: 10px;
+  line-height: 1.5;
+  overflow-wrap: break-word;
 }
 
 h2 {
-  margin: 0 0 10px; /* Space below the h2 */
+  font-size: 20px;
+  margin: 0 0 10px;
 }
 
 address {
   position: absolute;
   bottom: 8mm;
   right: 20mm;
-  text-align: right; /* Align address text to the right */
+  text-align: right;
 }
 
 form {
